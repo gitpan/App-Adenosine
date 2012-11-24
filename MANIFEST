@@ -1,4 +1,4 @@
-CHANGES.md
+Changes
 LICENSE
 MANIFEST
 META.json
@@ -6,7 +6,6 @@ Makefile.PL
 README
 adenosine-exports
 bin/adenosine
-bin/pp
 dist.ini
 lib/App/Adenosine.pm
 lib/App/Adenosine/Plugin/Rainbow.pm

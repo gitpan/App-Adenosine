@@ -31,7 +31,6 @@
             "File::Spec::Functions" : "0",
             "File::Temp" : "0",
             "Getopt::Long" : "0",
-            "JSON" : "2.53",
             "Module::Runtime" : "0",
             "Moo" : "1.000006",
             "Path::Class" : "0",
@@ -51,6 +50,6 @@
          "web" : "http://github.com/frioux/app-adenosine"
       }
    },
-   "version" : "2.000000"
+   "version" : "2.000001"
 }
 

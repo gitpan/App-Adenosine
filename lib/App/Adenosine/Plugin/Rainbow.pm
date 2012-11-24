@@ -1,6 +1,6 @@
 package App::Adenosine::Plugin::Rainbow;
 {
-  $App::Adenosine::Plugin::Rainbow::VERSION = '2.000000';
+  $App::Adenosine::Plugin::Rainbow::VERSION = '2.000001';
 }
 
 use Moo;
@@ -301,7 +301,7 @@ App::Adenosine::Plugin::Rainbow
 
 =head1 VERSION
 
-version 2.000000
+version 2.000001
 
 =head1 DESCRIPTION
 

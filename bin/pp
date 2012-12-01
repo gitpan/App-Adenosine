@@ -1,13 +1,24 @@
-package App::Adenosine::Role::FiltersStdErr;
-{
-  $App::Adenosine::Role::FiltersStdErr::VERSION = '2.001000';
+#!/usr/bin/env perl
+
+# PODNAME: pp
+
+# App-PipeFilter is probably worth looking at
+
+use strict;
+use warnings;
+
+use FindBin '$Bin';
+use lib "$Bin/../lib";
+use lib "$Bin/../extlib/lib/perl5";
+
+use JSON;
+while (<>) {
+   eval {
+      my $j = JSON->new->pretty->allow_nonref;
+      print $j->encode($j->decode($_));
+      1
+   } || print "$_\n"
 }
-
-use Moo::Role;
-
-requires 'filter_stderr';
-
-1;
 
 __END__
 
@@ -15,7 +26,7 @@ __END__
 
 =head1 NAME
 
-App::Adenosine::Role::FiltersStdErr
+pp
 
 =head1 VERSION
 

@@ -2,7 +2,7 @@ NAME
     adenosine
 
 VERSION
-    version 2.000001
+    version 2.001000
 
 Description
     Adenosine is a tiny script wrapper for curl <http://curl.haxx.se/>. It
@@ -369,6 +369,32 @@ Using Adenosine In Shell Scripts "!!!"
     to the history file and an initial URI base was set at the same time.
     Then a JSON file was fetched, edited using jsawk
     <http://github.com/micha/jsawk>, and re-uploaded to the server.
+
+Application Configuration
+    Adenosine may be configured by placing a "YAML" document in
+    ~/.adenosinerc.yml. More parts of adenosine will be configurable as time
+    goes on, but right now the only real configuration is for plugins.
+
+    Adenosine's plugin architecture (documented at "USING PLUGINS" in
+    App::Adenosine and "CREATING PLUGINS" in App::Adenosine) can be used to
+    color code headers, time the request, or more, if you choose to write
+    more plugins. Enabling a plugin is simple with the ~/.adenosinerc.yml
+    file. Here is how you would enable both
+    App::Adenosine::Plugin::Stopwatch and App::Adenosine::Plugin::Rainbow,
+    including a little bit of extra (non-required) configuration to
+    customize some colors for "::Rainbow".
+
+     plugins:
+        - ::Stopwatch
+        - ::Rainbow: {
+              request_method_color: cyan
+          }
+
+    The following would work if you didn't want to configure "::Rainbow"
+
+     plugins:
+        - ::Stopwatch
+        - ::Rainbow
 
 Working With JSON or XML Data
     JSON REST web services require some special tools to make them

@@ -27,10 +27,13 @@
       "runtime" : {
          "requires" : {
             "Capture::Tiny" : "0",
+            "Config::Any" : "0",
+            "File::HomeDir" : "0",
             "File::Path" : "0",
             "File::Spec::Functions" : "0",
             "File::Temp" : "0",
             "Getopt::Long" : "0",
+            "JSON" : "2.53",
             "Module::Runtime" : "0",
             "Moo" : "1.000006",
             "Path::Class" : "0",
@@ -38,7 +41,8 @@
             "Test::More" : "0",
             "Text::ParseWords" : "0",
             "URI" : "0",
-            "URI::Escape" : "0"
+            "URI::Escape" : "0",
+            "YAML" : "0"
          }
       }
    },
@@ -50,6 +54,6 @@
          "web" : "http://github.com/frioux/app-adenosine"
       }
    },
-   "version" : "2.000001"
+   "version" : "2.001000"
 }
 

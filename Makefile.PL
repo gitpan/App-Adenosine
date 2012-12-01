@@ -17,16 +17,20 @@ my %WriteMakefileArgs = (
   },
   "DISTNAME" => "App-Adenosine",
   "EXE_FILES" => [
-    "bin/adenosine"
+    "bin/adenosine",
+    "bin/pp"
   ],
   "LICENSE" => "perl",
   "NAME" => "App::Adenosine",
   "PREREQ_PM" => {
     "Capture::Tiny" => 0,
+    "Config::Any" => 0,
+    "File::HomeDir" => 0,
     "File::Path" => 0,
     "File::Spec::Functions" => 0,
     "File::Temp" => 0,
     "Getopt::Long" => 0,
+    "JSON" => "2.53",
     "Module::Runtime" => 0,
     "Moo" => "1.000006",
     "Path::Class" => 0,
@@ -34,9 +38,10 @@ my %WriteMakefileArgs = (
     "Test::More" => 0,
     "Text::ParseWords" => 0,
     "URI" => 0,
-    "URI::Escape" => 0
+    "URI::Escape" => 0,
+    "YAML" => 0
   },
-  "VERSION" => "2.000001",
+  "VERSION" => "2.001000",
   "test" => {
     "TESTS" => "t/*.t"
   }

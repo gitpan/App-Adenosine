@@ -1,6 +1,6 @@
 package App::Adenosine;
 {
-  $App::Adenosine::VERSION = '2.001000';
+  $App::Adenosine::VERSION = '2.001001';
 }
 
 use strict;
@@ -214,6 +214,7 @@ sub _get_uri_base {
    my $self = shift;
 
    my $file = $self->config_location->file('host');
+   return '' unless -f $file->stringify;
    ($file->slurp(chomp => 1))[0]
 }
 
@@ -289,7 +290,7 @@ App::Adenosine - Handy CLI HTTP tool
 
 =head1 VERSION
 
-version 2.001000
+version 2.001001
 
 =head1 NOTE
 

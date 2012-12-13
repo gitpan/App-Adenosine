@@ -1,6 +1,6 @@
 package App::Adenosine::Plugin::Stopwatch;
 {
-  $App::Adenosine::Plugin::Stopwatch::VERSION = '2.001001';
+  $App::Adenosine::Plugin::Stopwatch::VERSION = '2.001002';
 }
 
 use Moo;
@@ -30,7 +30,7 @@ sub render_duration {
 
 1;
 
-__END__
+
 
 =pod
 
@@ -40,7 +40,7 @@ App::Adenosine::Plugin::Stopwatch
 
 =head1 VERSION
 
-version 2.001001
+version 2.001002
 
 =head1 DESCRIPTION
 
@@ -71,3 +71,7 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
+
+
+__END__
+

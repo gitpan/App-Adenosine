@@ -1,6 +1,6 @@
 package App::Adenosine;
 {
-  $App::Adenosine::VERSION = '2.001001';
+  $App::Adenosine::VERSION = '2.001002';
 }
 
 use strict;
@@ -122,13 +122,13 @@ sub new {
       return $self->handle_curl_output($out, $err, $ret);
    } elsif ($action eq 'exports') {
       print <<'SHELL';
-function HEAD() { adenosine HEAD "$@" };
-function OPTIONS() { adenosine OPTIONS "$@" };
-function GET() { adenosine GET "$@" };
-function POST() { adenosine POST "$@" };
-function PUT() { adenosine PUT "$@" };
-function DELETE() { adenosine DELETE "$@" };
-function TRACE() { adenosine TRACE "$@" };
+function HEAD() { adenosine HEAD "$@"; };
+function OPTIONS() { adenosine OPTIONS "$@"; };
+function GET() { adenosine GET "$@"; };
+function POST() { adenosine POST "$@"; };
+function PUT() { adenosine PUT "$@"; };
+function DELETE() { adenosine DELETE "$@"; };
+function TRACE() { adenosine TRACE "$@"; };
 SHELL
    } else {
       my $uri_base = $self->uri_base($action);
@@ -280,7 +280,7 @@ sub host { URI->new($_[1])->host }
 
 1;
 
-__END__
+
 
 =pod
 
@@ -290,7 +290,7 @@ App::Adenosine - Handy CLI HTTP tool
 
 =head1 VERSION
 
-version 2.001001
+version 2.001002
 
 =head1 NOTE
 
@@ -383,3 +383,7 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
+
+
+__END__
+

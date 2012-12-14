@@ -1,6 +1,6 @@
 package App::Adenosine::Plugin::Stopwatch;
 {
-  $App::Adenosine::Plugin::Stopwatch::VERSION = '2.001002';
+  $App::Adenosine::Plugin::Stopwatch::VERSION = '2.001003';
 }
 
 use Moo;
@@ -40,7 +40,7 @@ App::Adenosine::Plugin::Stopwatch
 
 =head1 VERSION
 
-version 2.001002
+version 2.001003
 
 =head1 DESCRIPTION
 

@@ -2,7 +2,7 @@ NAME
     adenosine
 
 VERSION
-    version 2.001002
+    version 2.001003
 
 Description
     Adenosine is a tiny script wrapper for curl <http://curl.haxx.se/>. It
@@ -395,6 +395,12 @@ Application Configuration
      plugins:
         - ::Stopwatch
         - ::Rainbow
+
+    Another option allows the user to disable the XDG based directory
+    structure (typically ~/.config). Simply put the following in your
+    ~/.adenosinerc.yml:
+
+     enable_xdg: 0
 
 Working With JSON or XML Data
     JSON REST web services require some special tools to make them

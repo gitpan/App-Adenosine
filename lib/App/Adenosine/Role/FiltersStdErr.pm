@@ -1,6 +1,6 @@
 package App::Adenosine::Role::FiltersStdErr;
 {
-  $App::Adenosine::Role::FiltersStdErr::VERSION = '2.001002';
+  $App::Adenosine::Role::FiltersStdErr::VERSION = '2.001003';
 }
 
 use Moo::Role;
@@ -18,7 +18,7 @@ App::Adenosine::Role::FiltersStdErr
 
 =head1 VERSION
 
-version 2.001002
+version 2.001003
 
 =head1 AUTHOR
 

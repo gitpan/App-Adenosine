@@ -41,7 +41,7 @@ my %WriteMakefileArgs = (
     "URI::Escape" => 0,
     "YAML" => 0
   },
-  "VERSION" => "2.001002",
+  "VERSION" => "2.001003",
   "test" => {
     "TESTS" => "t/*.t"
   }

@@ -1,6 +1,6 @@
 package App::Adenosine;
 {
-  $App::Adenosine::VERSION = '2.001002';
+  $App::Adenosine::VERSION = '2.001003';
 }
 
 use strict;
@@ -22,6 +22,10 @@ our $verb_regex = '(?:HEAD|OPTIONS|GET|DELETE|PUT|POST|TRACE)';
 
 sub verbose { $_[0]->{verbose} }
 sub plugins { @{$_[0]->{plugins}} }
+sub enable_xdg {
+   return $_[0]->{enable_xdg} if exists $_[0]->{enable_xdg};
+   return 1
+}
 
 sub _plugin_name {
    my ($self, $name) = @_;
@@ -139,7 +143,8 @@ SHELL
 
 sub config_location {
    my $loc;
-   if (my $h = $ENV{XDG_CONFIG_HOME}) {
+   if ($_[0]->enable_xdg and $ENV{XDG_CONFIG_HOME}) {
+      my $h = $ENV{XDG_CONFIG_HOME};
       $loc = "$h/resty"
    } else {
       $loc = "$ENV{HOME}/.resty"
@@ -290,7 +295,7 @@ App::Adenosine - Handy CLI HTTP tool
 
 =head1 VERSION
 
-version 2.001002
+version 2.001003
 
 =head1 NOTE
 

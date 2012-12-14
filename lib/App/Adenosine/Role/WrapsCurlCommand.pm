@@ -1,6 +1,6 @@
 package App::Adenosine::Role::WrapsCurlCommand;
 {
-  $App::Adenosine::Role::WrapsCurlCommand::VERSION = '2.001002';
+  $App::Adenosine::Role::WrapsCurlCommand::VERSION = '2.001003';
 }
 
 use Moo::Role;
@@ -18,7 +18,7 @@ App::Adenosine::Role::WrapsCurlCommand
 
 =head1 VERSION
 
-version 2.001002
+version 2.001003
 
 =head1 AUTHOR
 

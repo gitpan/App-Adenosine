@@ -4,7 +4,7 @@
       "Arthur Axel \"fREW\" Schmidt <frioux+cpan@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300017, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -19,6 +19,11 @@
             "ExtUtils::MakeMaker" : "6.30"
          }
       },
+      "develop" : {
+         "requires" : {
+            "Test::Pod" : "1.41"
+         }
+      },
       "runtime" : {
          "requires" : {
             "Capture::Tiny" : "0",
@@ -27,14 +32,18 @@
             "File::Path" : "0",
             "File::Spec::Functions" : "0",
             "File::Temp" : "0",
+            "File::pushd" : "0",
+            "FindBin" : "0",
             "Getopt::Long" : "0",
             "JSON" : "2.53",
             "Module::Runtime" : "0",
             "Moo" : "1.000006",
-            "Path::Class" : "0",
+            "Path::Class" : "0.26",
+            "Scalar::Util" : "0",
             "Test::Deep" : "0",
             "Test::More" : "0",
             "Text::ParseWords" : "0",
+            "Time::HiRes" : "0",
             "URI" : "0",
             "URI::Escape" : "0",
             "YAML" : "0"
@@ -49,6 +58,6 @@
          "web" : "http://github.com/frioux/app-adenosine"
       }
    },
-   "version" : "2.001003"
+   "version" : "2.001004"
 }
 

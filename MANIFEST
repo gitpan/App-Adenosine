@@ -13,7 +13,6 @@ lib/App/Adenosine/Plugin/Rainbow.pm
 lib/App/Adenosine/Plugin/Stopwatch.pm
 lib/App/Adenosine/Role/FiltersStdErr.pm
 lib/App/Adenosine/Role/WrapsCurlCommand.pm
-maint/prefab.pl
 t/basic.t
 t/bin/bluh
 t/release-pod-syntax.t

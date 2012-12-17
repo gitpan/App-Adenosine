@@ -1,6 +1,6 @@
 package App::Adenosine;
 {
-  $App::Adenosine::VERSION = '2.001003';
+  $App::Adenosine::VERSION = '2.001004';
 }
 
 use strict;
@@ -285,7 +285,7 @@ sub host { URI->new($_[1])->host }
 
 1;
 
-
+__END__
 
 =pod
 
@@ -295,7 +295,7 @@ App::Adenosine - Handy CLI HTTP tool
 
 =head1 VERSION
 
-version 2.001003
+version 2.001004
 
 =head1 NOTE
 
@@ -388,7 +388,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
-
-__END__
-

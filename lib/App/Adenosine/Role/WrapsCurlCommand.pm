@@ -1,6 +1,6 @@
 package App::Adenosine::Role::WrapsCurlCommand;
 {
-  $App::Adenosine::Role::WrapsCurlCommand::VERSION = '2.001003';
+  $App::Adenosine::Role::WrapsCurlCommand::VERSION = '2.001004';
 }
 
 use Moo::Role;
@@ -10,6 +10,7 @@ requires 'wrap';
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -18,7 +19,7 @@ App::Adenosine::Role::WrapsCurlCommand
 
 =head1 VERSION
 
-version 2.001003
+version 2.001004
 
 =head1 AUTHOR
 
@@ -32,4 +33,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

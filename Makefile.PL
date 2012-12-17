@@ -29,19 +29,23 @@ my %WriteMakefileArgs = (
     "File::Path" => 0,
     "File::Spec::Functions" => 0,
     "File::Temp" => 0,
+    "File::pushd" => 0,
+    "FindBin" => 0,
     "Getopt::Long" => 0,
     "JSON" => "2.53",
     "Module::Runtime" => 0,
     "Moo" => "1.000006",
-    "Path::Class" => 0,
+    "Path::Class" => "0.26",
+    "Scalar::Util" => 0,
     "Test::Deep" => 0,
     "Test::More" => 0,
     "Text::ParseWords" => 0,
+    "Time::HiRes" => 0,
     "URI" => 0,
     "URI::Escape" => 0,
     "YAML" => 0
   },
-  "VERSION" => "2.001003",
+  "VERSION" => "2.001004",
   "test" => {
     "TESTS" => "t/*.t"
   }

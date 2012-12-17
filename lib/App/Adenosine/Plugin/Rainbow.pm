@@ -1,12 +1,23 @@
 package App::Adenosine::Plugin::Rainbow;
 {
-  $App::Adenosine::Plugin::Rainbow::VERSION = '2.001003';
+  $App::Adenosine::Plugin::Rainbow::VERSION = '2.001004';
 }
 
 use Moo;
-use Term::ExtendedColor ':all';
 
 with 'App::Adenosine::Role::FiltersStdErr';
+use Module::Runtime 'require_module';
+use Try::Tiny;
+
+try {
+   require_module('Term::ExtendedColor')
+} catch {
+   die <<"ERR"
+Term::ExtendedColor must be installed to use ::Rainbow
+
+original error: $_
+ERR
+};
 
 our %old_colormap = (
    red => 1,
@@ -36,11 +47,11 @@ sub colorize {
          if $arg->{$_} && exists $old_colormap{$arg->{$_}}
    }
 
-   $str = fg($arg->{fg}, $str ) if $arg->{fg};
-   $str = bg($arg->{bg}, $str ) if $arg->{bg};
-   $str = bold($str           ) if $arg->{bold};
-   $str = italic($str         ) if $arg->{italic};
-   $str = underline($str      ) if $arg->{underline};
+   $str = Term::ExtendedColor::fg($arg->{fg}, $str ) if $arg->{fg};
+   $str = Term::ExtendedColor::bg($arg->{bg}, $str ) if $arg->{bg};
+   $str = Term::ExtendedColor::bold($str           ) if $arg->{bold};
+   $str = Term::ExtendedColor::italic($str         ) if $arg->{italic};
+   $str = Term::ExtendedColor::underline($str      ) if $arg->{underline};
 
    return $str;
 }
@@ -291,7 +302,7 @@ sub filter_stderr {
 
 1;
 
-
+__END__
 
 =pod
 
@@ -301,7 +312,7 @@ App::Adenosine::Plugin::Rainbow
 
 =head1 VERSION
 
-version 2.001003
+version 2.001004
 
 =head1 DESCRIPTION
 
@@ -466,7 +477,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
-
-__END__
-

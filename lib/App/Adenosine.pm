@@ -1,10 +1,9 @@
 package App::Adenosine;
-{
-  $App::Adenosine::VERSION = '2.001005';
-}
 
 use strict;
 use warnings;
+
+our $VERSION = '2.001006'; # VERSION
 
 # ABSTRACT: Handy CLI HTTP tool
 
@@ -295,7 +294,7 @@ App::Adenosine - Handy CLI HTTP tool
 
 =head1 VERSION
 
-version 2.001005
+version 2.001006
 
 =head1 NOTE
 
@@ -382,7 +381,7 @@ Arthur Axel "fREW" Schmidt <frioux+cpan@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Arthur Axel "fREW" Schmidt.
+This software is copyright (c) 2013 by Arthur Axel "fREW" Schmidt.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

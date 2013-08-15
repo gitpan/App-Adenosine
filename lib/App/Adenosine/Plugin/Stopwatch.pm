@@ -1,9 +1,9 @@
 package App::Adenosine::Plugin::Stopwatch;
-{
-  $App::Adenosine::Plugin::Stopwatch::VERSION = '2.001005';
-}
 
 use Moo;
+
+our $VERSION = '2.001006'; # VERSION
+
 use Time::HiRes qw(gettimeofday tv_interval);
 
 with 'App::Adenosine::Role::WrapsCurlCommand';
@@ -40,7 +40,7 @@ App::Adenosine::Plugin::Stopwatch
 
 =head1 VERSION
 
-version 2.001005
+version 2.001006
 
 =head1 DESCRIPTION
 
@@ -65,7 +65,7 @@ Arthur Axel "fREW" Schmidt <frioux+cpan@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Arthur Axel "fREW" Schmidt.
+This software is copyright (c) 2013 by Arthur Axel "fREW" Schmidt.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

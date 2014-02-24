@@ -2,11 +2,13 @@
 abstract: 'Handy CLI HTTP tool'
 author:
   - "Arthur Axel \"fREW\" Schmidt <frioux+cpan@gmail.com>"
-build_requires: {}
+build_requires:
+  Test::Deep: 0
+  Test::More: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Zilla version 5.013, CPAN::Meta::Converter version 2.132830'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -25,16 +27,15 @@ requires:
   JSON: 2.53
   Module::Runtime: 0
   Moo: 1.000006
-  Path::Class: 0.26
+  Path::Class: 0
   Scalar::Util: 0
-  Test::Deep: 0
-  Test::More: 0
   Text::ParseWords: 0
   Time::HiRes: 0
   URI: 0
   URI::Escape: 0
   YAML: 0
 resources:
-  bugtracker: http://github.com/frioux/app-adenosine/issues
-  repository: git://github.com/frioux/app-adenosine.git
-version: 2.001006
+  bugtracker: https://github.com/frioux/app-adenosine/issues
+  homepage: https://github.com/frioux/app-adenosine
+  repository: https://github.com/frioux/app-adenosine.git
+version: 2.001007

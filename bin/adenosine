@@ -2,8 +2,6 @@
 
 # PODNAME: adenosine
 
-our $VERSION = '2.001006'; # VERSION
-
 use strict;
 use warnings;
 
@@ -29,15 +27,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 adenosine
 
 =head1 VERSION
 
-version 2.001006
-
-=encoding utf8
+version 2.001007
 
 =head1 Description
 
@@ -141,6 +139,7 @@ look out for an imcompatibility.
       PUT [path] [data] [OPTIONS]             # PUT request
       POST [path] [data] [OPTIONS]            # POST request
       TRACE [path] [OPTIONS]                  # TRACE request
+      PATCH [path] [OPTIONS]                  # PATCH request
 
       Options:
 
@@ -178,7 +177,8 @@ and then do:
 The request URI base is what the eventual URI to which the requests will be
 made is based on. Specifically, it is a URI that may contain the C<*> character
 one or more times. The C<*> will be replaced with the C<path> parameter in the
-C<OPTIONS>, C<HEAD>, C<GET>, C<POST>, C<PUT>, or C<DELETE> request as described above.
+C<OPTIONS>, C<HEAD>, C<GET>, C<POST>, C<PUT>, C<PATCH> or C<DELETE> request as
+described above.
 
 For example:
 
@@ -216,8 +216,8 @@ arguments. The URI base will be printed to stdout.
 
 =head1 The Optional Path Parameter
 
-The HTTP verbs (C<OPTIONS>, C<HEAD>, C<GET>, C<POST>, C<PUT>, and C<DELETE>) first
-argument is always
+The HTTP verbs (C<OPTIONS>, C<HEAD>, C<GET>, C<POST>, C<PUT>, C<PATCH> and
+C<DELETE>) first argument is always
 an optional URI path. This path must always start with a C</> character. If
 the path parameter is not provided on the command line, adenosine will just use
 the last path it was provided with. This "last path" is stored in an
@@ -510,7 +510,7 @@ Arthur Axel "fREW" Schmidt <frioux+cpan@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Arthur Axel "fREW" Schmidt.
+This software is copyright (c) 2014 by Arthur Axel "fREW" Schmidt.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

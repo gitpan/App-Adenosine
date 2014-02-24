@@ -2,7 +2,7 @@ NAME
     adenosine
 
 VERSION
-    version 2.001006
+    version 2.001007
 
 Description
     Adenosine is a tiny script wrapper for curl <http://curl.haxx.se/>. It
@@ -99,6 +99,7 @@ Usage
           PUT [path] [data] [OPTIONS]             # PUT request
           POST [path] [data] [OPTIONS]            # POST request
           TRACE [path] [OPTIONS]                  # TRACE request
+          PATCH [path] [OPTIONS]                  # PATCH request
 
           Options:
 
@@ -133,8 +134,8 @@ Request URI Base
     The request URI base is what the eventual URI to which the requests will
     be made is based on. Specifically, it is a URI that may contain the "*"
     character one or more times. The "*" will be replaced with the "path"
-    parameter in the "OPTIONS", "HEAD", "GET", "POST", "PUT", or "DELETE"
-    request as described above.
+    parameter in the "OPTIONS", "HEAD", "GET", "POST", "PUT", "PATCH" or
+    "DELETE" request as described above.
 
     For example:
 
@@ -171,11 +172,11 @@ Request URI Base
     with no arguments. The URI base will be printed to stdout.
 
 The Optional Path Parameter
-    The HTTP verbs ("OPTIONS", "HEAD", "GET", "POST", "PUT", and "DELETE")
-    first argument is always an optional URI path. This path must always
-    start with a "/" character. If the path parameter is not provided on the
-    command line, adenosine will just use the last path it was provided
-    with. This "last path" is stored in an environment variable
+    The HTTP verbs ("OPTIONS", "HEAD", "GET", "POST", "PUT", "PATCH" and
+    "DELETE") first argument is always an optional URI path. This path must
+    always start with a "/" character. If the path parameter is not provided
+    on the command line, adenosine will just use the last path it was
+    provided with. This "last path" is stored in an environment variable
     ($_resty_path), so each terminal basically has its "!!!" own "last
     path".
 
@@ -437,7 +438,7 @@ AUTHOR
     Arthur Axel "fREW" Schmidt <frioux+cpan@gmail.com>
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2013 by Arthur Axel "fREW" Schmidt.
+    This software is copyright (c) 2014 by Arthur Axel "fREW" Schmidt.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.

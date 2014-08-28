@@ -1,5 +1,5 @@
 package App::Adenosine;
-$App::Adenosine::VERSION = '2.001007';
+$App::Adenosine::VERSION = '2.001008';
 use strict;
 use warnings;
 
@@ -295,7 +295,7 @@ App::Adenosine - Handy CLI HTTP tool
 
 =head1 VERSION
 
-version 2.001007
+version 2.001008
 
 =head1 NOTE
 

@@ -1,5 +1,5 @@
 package App::Adenosine::Plugin::Rainbow;
-$App::Adenosine::Plugin::Rainbow::VERSION = '2.001007';
+$App::Adenosine::Plugin::Rainbow::VERSION = '2.001008';
 use Moo;
 
 with 'App::Adenosine::Role::FiltersStdErr';
@@ -311,7 +311,7 @@ App::Adenosine::Plugin::Rainbow
 
 =head1 VERSION
 
-version 2.001007
+version 2.001008
 
 =head1 DESCRIPTION
 

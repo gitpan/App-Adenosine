@@ -1,5 +1,5 @@
 package App::Adenosine::Plugin::Stopwatch;
-$App::Adenosine::Plugin::Stopwatch::VERSION = '2.001007';
+$App::Adenosine::Plugin::Stopwatch::VERSION = '2.001008';
 use Moo;
 
 use Time::HiRes qw(gettimeofday tv_interval);
@@ -40,7 +40,7 @@ App::Adenosine::Plugin::Stopwatch
 
 =head1 VERSION
 
-version 2.001007
+version 2.001008
 
 =head1 DESCRIPTION
 
